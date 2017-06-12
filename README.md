@@ -13,6 +13,6 @@ You could also point at another Selenium host that has Firefox.
 
 ## To run the tests:
 ```
-npm install
-npm run test
+$ npm install
+$ npm run test
 ```
