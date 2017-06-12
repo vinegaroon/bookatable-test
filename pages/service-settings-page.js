@@ -17,7 +17,7 @@ module.exports = {
       .setValue(this.selectors.serviceNameField, serviceName)
       .assert.visible(this.selectors.addServiceButton)
       .click(this.selectors.addServiceButton)
-      .waitForElementVisible(this.selectors.shiftConfirmationLabel, 3000)
+      .waitForElementVisible(this.selectors.shiftConfirmationLabel, 6000)
       .assert.containsText(this.selectors.shiftConfirmationLabel, serviceName);
   }
 

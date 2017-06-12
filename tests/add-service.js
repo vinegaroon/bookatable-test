@@ -20,6 +20,7 @@ module.exports = {
   'Add a service on Monday with defaults': function(client) {
     require('nightwatch-pages')(client, path.resolve(__dirname, '..', 'pages'));
 
-    client.page.servicesettingspage.addMondayService("Sam's Sweet Service");
+    // Can't create a service if one exists with the same name, so add a random number on the end
+    client.page['service-settings-page'].addMondayService("Sam's Sweet Service #" + Math.floor(Math.random() * 100000)).end();
   }
 };
